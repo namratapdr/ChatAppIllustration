@@ -42,6 +42,20 @@ body{
     height: 100vh;
     width:100%;
 }
+.phone{
+    z-index: 1;
+    position: absolute;
+    left:50px;
+    top:150px;
+    background: #f3f0f0;
+    width: 280px;
+    height: 500px;
+    right: -160px;
+    border: 15px white solid;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px #b4b3b3;
+    border-radius: 30px;
+}
 }
 
 main{
