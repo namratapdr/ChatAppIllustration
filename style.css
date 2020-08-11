@@ -170,10 +170,6 @@ body::after{
         width: 320px;
         height: 60%;
     }
-    body::after{
-        border-bottom-left-radius: 25%;
-        width:250px;
-    }
     .content{
         height: auto;
     }
@@ -188,8 +184,9 @@ body::after{
     }
     body::after{
     height: 65%;
-    width:450px;
-    left:70vw;
+    border-bottom-left-radius: 5%;
+        width:250px;
+    left:72vw;
     }
 }
 @media (max-width:350px){
