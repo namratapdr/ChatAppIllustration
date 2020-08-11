@@ -48,9 +48,6 @@ body::after{
     }
     .main-text {
         top:90px;
-        transform: scale(0);
-        animation: pop 1.5s linear forwards;
-        animation-delay: 8s;
     }
     .attribution { 
     position: relative;
@@ -157,6 +154,9 @@ body::after{
     height: 400px;
     margin: 1rem;
     margin-left: 8rem;
+    transform: scale(0);
+        animation: pop 1.5s linear forwards;
+        animation-delay: 8s;
 }
 .main-text p {
     color: gray;
