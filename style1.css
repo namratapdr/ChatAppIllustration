@@ -34,7 +34,7 @@ body::after{
     background: #f8f8f8;
 }
 .content{
-    height: 100vh;
+    height: 100%;
     width: 90vw;
     display: flex;
     flex-direction: row;
