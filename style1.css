@@ -48,7 +48,15 @@ body::after{
     }
     .main-text {
         top:90px;
+        transform: scale(0);
+        animation: pop 1.5s linear forwards;
+        animation-delay: 8s;
     }
+    .attribution { 
+    position: relative;
+    bottom: 4rem;
+     font-size: 13px; text-align: center;
+     }
 }
 .phone{
     margin: 1.5rem;
@@ -56,7 +64,7 @@ body::after{
     z-index: 1;
     background: hsl(270, 20%, 96%);
     width: 300px;
-    height: 580px;
+    height: 590px;
     border: 13px white solid;
     box-sizing: border-box;
     box-shadow: 10px 10px 30px #b4b3b3;
@@ -72,7 +80,7 @@ body::after{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
      margin-top: -2px;
-    left: 55px;
+    left: 65px;
 }
 .header {
     font-size: 16px;
@@ -226,8 +234,18 @@ ul {
      position: relative;
     left: 35px;
     width:90%;
-    height: 50px;
+    max-height: 50px;
     background:transparent;
+}
+@media (max-width:360px){
+    .phone::before{
+        left: 35px;
+    }
+   .phone{
+       width: 95vw;
+       height: 640px;
+   }
+   
 }
 .chat-images li {
     display: inline;
@@ -318,3 +336,111 @@ label input:checked ~ .check{
 label .hour{
     margin-right: 5px;
 }
+.type-a-text {
+    position: absolute;
+    bottom: 7px;
+    width: 95%;
+    left: 7px;
+    height: 40px;
+    border-radius: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.type-a-text input{
+    position: relative;
+    right: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+.send-button {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: hsl(271, 36%, 24%);
+    border-radius: 50%;
+}
+.arrow {
+    position: relative;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid white ;
+    border-bottom: 3px solid white ;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transform: rotate(-45deg);
+}
+.phone{
+    overflow: hidden;
+}
+.chat-texts{
+    transform: translateY(500px);
+    animation: appear 8s linear forwards;
+}
+@keyframes appear {
+    0%{
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.chat-text {
+   transform: scale(0);
+}
+.chat-text:nth-child(1){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 1.2s;
+}
+.chat-text:nth-child(2){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 2.4s;
+}
+.chat-text:nth-child(3){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 3.2s;
+}
+.chat-text:nth-child(4){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 4s;
+}
+.chat-text:nth-child(5){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 4.8s;
+}
+.chat-text:nth-child(6){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 5.6s;
+}
+.chat-text:nth-child(7){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 6.4s;
+}
+.chat-text:nth-child(8){
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 7.2s;
+}
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+ .attribution { 
+    position: relative;
+    bottom: .5rem;
+     font-size: 13px; text-align: center;
+     }
+    .attribution a { 
+        text-decoration: none;
+        color:  rgb(136,56,255); }

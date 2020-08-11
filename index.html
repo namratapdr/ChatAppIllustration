@@ -7,43 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style1.css">
   <title>Frontend Mentor | Chat App Illustration</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <!--
-     Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49 
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  -->
 <main class="content">
   <div class="phone">
     <div class="header">
@@ -75,23 +40,23 @@
         <li class="chat-text chat-left">
           <p>Could you send over some pictures of your dog, please?</p>
         </li>
-        <li class=" chat-right-images">
+        <li class="chat-text chat-right-images">
           <ul class="chat-images">
             <li><img src="./images/dog-image-1.jpg" alt="dog-image-1"></li>
             <li><img src="./images/dog-image-2.jpg" alt="dog-image-2"></li>
             <li><img src="./images/dog-image-3.jpg" alt="dog-image-3"></li>
           </ul>
         </li>
-        <li class="chat-right">
+        <li class="chat-text chat-right">
           <p>Here are a few pictures. She’s a happy girl!</p>
         </li>
-        <li class="chat-right small">
+        <li class="chat-text chat-right small">
           <p>Can you make it?</p>
         </li>
-        <li class="chat-left big">
+        <li class="chat-text chat-left big">
           <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
         </li>
-        <li class="chat-left pricing">
+        <li class="chat-text chat-left pricing">
           <ul class="price">
             <li>
               <label class="price-label" for="30min">30 minute walk
@@ -104,7 +69,7 @@
             </li>
           </ul>
         </li>
-        <li class="chat-left pricing">
+        <li class="chat-text chat-left pricing">
           <ul class="price">
             <li style="margin-left:-35px">
               <label class="price-label hour" for="1hr">1 hour walk
@@ -117,7 +82,16 @@
             </li>
           </ul>
         </li>
-      </ul>
+        
+        </ul>
+    </div>
+    <div class="type-a-text">
+      <div class="type-text">
+        <input type="text" placeholder="Type a message...">
+        <div class="send-button">
+          <div class="arrow"></div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="main-text">
@@ -127,9 +101,9 @@
       your walker and book again all through the chat.</p>
   </div>
 </main>
-  <!--div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://twitter.com/namratapdr" target="_blank">namratapdr</a>.
   </div>
 </body>
 </html>
