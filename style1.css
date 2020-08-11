@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-html,body {
-height: 100%;
-margin: 0;
-}
-::-webkit-scrollbar {
-    display: none;
-}
 body{
+    margin: 0;
     width: 98vw;
-    height: 100vh;
+    height: 95vh;
      overflow-x: hidden;
      font-family: 'Rubik', sans-serif;
 }
-.container{
-   
+body::before{
+    content: '';
     z-index: -1;
-    position: relative;
-    right: 100px;
+    position: absolute;
+    left: -100px;
     border-bottom-left-radius: 45%;
     border-bottom-right-radius: 45%;
     height: 85%;
@@ -24,51 +18,43 @@ body{
     background: rgb(136,56,255);
     background: linear-gradient(38deg, rgba(136,56,255,1) 44%, rgba(233,66,255,1) 88%);
 }
-.container::before{
+body::after{
+    z-index: -1;
     content: '';
     position: absolute;
-    top: 35%;
-    left:82vw;
+    bottom: 0;
+    left:70vw;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
-    height: 100%;
-    width:100%;
+    height: 85%;
+    width:450px;
     background: #f8f8f8;
 }
-@media (max-width: 769px ){
-    .container{
-    height: 60%;
-    width:350px;
-    right: 35%;
-}
-.container::before{
-    top: 80%;
-    left:95vw;
-    height: 100vh;
-    width:100%;
-}
-
-}
-
 .content{
     height: 100vh;
     width: 90vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
-
+@media (min-width: 947px){
+    .phone {
+        left: 70px;
+    }
+    .main-text {
+        top:90px;
+    }
+}
 .phone{
+    margin: 1.5rem;
+    position: relative;
     z-index: 1;
-    position: absolute;
-    bottom: 20px;
     background: #f3f0f0;
     width: 280px;
     height: 500px;
-    right: -160px;
-    border: 15px white solid;
+    border: 13px white solid;
     box-sizing: border-box;
     box-shadow: 10px 10px 30px #b4b3b3;
     border-radius: 30px;
@@ -82,7 +68,6 @@ body{
     height: 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-  
     left: 55px;
 }
 .header {
@@ -159,43 +144,35 @@ body{
     position: relative;
     max-width: 380px;
     height: 400px;
-    top:60px;
-    left: 420px;
     margin: 1rem;
+    margin-left: 8rem;
 }
 .main-text p {
     color: gray;
 }
-@media (max-width:969px){
-    .content{
-        z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (max-width:946px) {
+    body::before{
+        left:-50px;
+        width: 320px;
+        height: 60%;
     }
+    body::after{
+        border-bottom-left-radius: 25%;
+    }
+    .phone{
+        top:50px;
+        left:10px;
+    }
+    
+
     .main-text {
-    text-align: center;
-    position: relative;
-    width: 90%;
-    height: 400px;
-    top:450px;
-    left: 150px;
-    margin: 1rem;
-}
-.phone{
-    z-index: 1;
-    position: absolute;
-    left:90%;
-    top:50px;
-    background: #f3f0f0;
-    width: 280px;
-    height: 470px;
-    right: -160px;
-    border: 15px white solid;
-    box-sizing: border-box;
-    box-shadow: 10px 10px 30px #b4b3b3;
-    border-radius: 30px;
-}
+        top:50px;
+        right: 50px;
+        text-align: center;
+    }
+    body::after{
+    height: 65%;
+    width:450px;
+    left:70vw;
+    }
 }
