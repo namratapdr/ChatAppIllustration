@@ -162,6 +162,9 @@ body::after{
     color: gray;
 }
 @media (max-width:946px) {
+    body{
+        overflow-x: hidden;
+    }
     body::before{
         left:-50px;
         width: 320px;
