@@ -3,8 +3,11 @@ body{
     margin: 0;
     width: 98vw;
     height: 95vh;
-     overflow-x: hidden;
+     overflow-x: hidden !important;
      font-family: 'Rubik', sans-serif;
+}
+* {
+    box-sizing: border-box;
 }
 body::before{
     content: '';
@@ -51,9 +54,9 @@ body::after{
     margin: 1.5rem;
     position: relative;
     z-index: 1;
-    background: #f3f0f0;
-    width: 280px;
-    height: 500px;
+    background: hsl(270, 20%, 96%);
+    width: 300px;
+    height: 580px;
     border: 13px white solid;
     box-sizing: border-box;
     box-shadow: 10px 10px 30px #b4b3b3;
@@ -68,6 +71,7 @@ body::after{
     height: 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+     margin-top: -2px;
     left: 55px;
 }
 .header {
@@ -102,7 +106,7 @@ body::after{
 }
 .person-img {
     position: relative;
-    top:2.4rem;
+    top:2.6rem;
     left: 2rem;
     width: 30px;
     height: 30px;
@@ -117,7 +121,6 @@ body::after{
 }
 .person-id{
     position: relative;
-    bottom: .2rem;
     left: 4.5rem;
 }
 .person-id h4 {
@@ -125,12 +128,12 @@ body::after{
 }
 .person-id p {
     font-size: 60%;
-
+     color: hsl(276, 100%, 81%);
 }
 #setting-icon {
     position: relative;
-    bottom: 2rem;
-   left: 215px;
+    bottom: 1.9rem;
+   left: 245px;
 }
 #setting-icon div {
   width: 4px;
@@ -159,15 +162,16 @@ body::after{
     body::after{
         border-bottom-left-radius: 25%;
     }
+    .content{
+        height: auto;
+    }
     .phone{
         top:50px;
-        left:10px;
+        left:8%;
     }
-    
-
     .main-text {
         top:50px;
-        right: 50px;
+        right: 25px;
         text-align: center;
     }
     body::after{
@@ -175,4 +179,142 @@ body::after{
     width:450px;
     left:70vw;
     }
+}
+@media (max-width:350px){
+    .phone{
+        top:50px;
+        left:6%;
+    }
+    .main-text {
+        width: 100%;
+        top:50px;
+        right: 30px;
+        text-align: center;
+    }
+}
+ul {
+    list-style-type:none;
+}
+.chat-texts{
+    display: block;
+    position: absolute;
+    top:87px;
+    line-height: normal;
+    font-size: 70%;
+}
+
+.chat-left {
+    position: relative;
+    right: 35px;
+    width: 80%;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(276, 100%, 91%);
+    color: hsl(276, 55%, 52%);
+    border-bottom-left-radius:1px;
+    margin: 5px;
+    box-shadow: 1px 2px 5px #c5c5c5;
+}
+.chat-left p , .chat-right p {
+    width: 90%;
+    position: relative;
+}
+.chat-right-image{
+     position: relative;
+    left: 35px;
+    width:90%;
+    height: 50px;
+    background:transparent;
+}
+.chat-images li {
+    display: inline;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    border-radius: 10%;
+}
+.chat-images li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.chat-right{
+    position: relative;
+    top:5px;
+    left: 43px;
+    width:75%;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom-right-radius:1px;
+    margin: 7px;
+    color: hsl(271, 15%, 43%);
+     box-shadow: 2px 1px 5px #c5c5c5;
+}
+.small {
+     position: relative;
+    left: 90px;
+    width:55%;
+    height: 35px;
+}
+.big{
+    top:5px;
+    height: 60px;
+}
+.pricing{
+    top:5px;
+    height: 40px;
+     width: 90%;
+     color: hsl(289, 100%, 72%);
+      background: rgb(136,56,255);
+    background: linear-gradient(49deg, rgba(233,66,255,1) 22%, rgba(136,56,255,1) 62%);
+}
+.price li {
+    display: inline;
+    float: left;
+    margin: 3px;
+}
+label{
+    position: relative;
+    top:15px;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+label input {
+    opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check {
+    position: absolute;
+  left:-25px;
+  height: 18px;
+  width: 18px;
+   background-color: transparent;
+  border-radius: 50%;
+   border: 3px solid hsl(289, 95%, 77%);
+}
+label:hover  input ~ .check {
+  background-color: #fff;
+}
+label input:checked ~ .check{
+  background-color: #f8f8f8;
+}
+.price li h2{
+    color: white;
+}
+label .hour{
+    margin-right: 5px;
 }
