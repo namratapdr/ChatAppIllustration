@@ -44,3 +44,18 @@ These two colors are the vibrant background colors you see throughout the design
 
 - Family: [Rubik](https://fonts.google.com/specimen/Rubik)
 - Weights: 400, 500, 700
+:root {
+	--subheading-text: hsl(276, 100%, 81%);
+	--msg-bg: hsl(276, 100%, 91%);
+	--msg-user-one: hsl(276, 55%, 52%);
+	--msg-user-two: hsl(271, 15%, 43%);
+	--placeholder: hsl(206, 6%, 79%);
+	--main-heading: hsl(271, 36%, 24%);
+	--paragraph: hsl(270, 7%, 64%);
+	--lightgradient: hsl(293, 100%, 63%);
+	--darkgradient: hsl(264, 100%, 61%);
+	--white: hsl(0, 0%, 100%);
+	--appbg: hsl(270, 20%, 96%);
+	--btn: hsl(271, 36%, 24%);
+	--radiobtn: hsl(289, 100%, 72%);
+}
