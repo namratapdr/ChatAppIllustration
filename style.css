@@ -172,6 +172,7 @@ body::after{
     }
     body::after{
         border-bottom-left-radius: 25%;
+        width:250px;
     }
     .content{
         height: auto;
