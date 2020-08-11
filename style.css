@@ -77,7 +77,7 @@ body::after{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
      margin-top: -2px;
-    left: 65px;
+    left: 70px;
 }
 .header {
     font-size: 16px;
@@ -175,7 +175,7 @@ body::after{
     }
     .phone{
         top:50px;
-        left:8%;
+        left:10%;
     }
     .main-text {
         top:50px;
